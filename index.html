@@ -32,6 +32,38 @@
     .grid{display:grid;gap:18px}
     @media(min-width:900px){.hero{grid-template-columns:1.2fr .8fr}.grid{grid-template-columns:1fr 1fr}}
     footer{text-align:center;margin:40px 0;color:#64748b;font-size:14px}
+    
+  /* CTA section */
+.cta-section {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 420px;
+}
+
+.btn {
+  padding: 14px 18px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  text-align: center;
+  font-size: 16px;
+}
+
+.btn-india {
+  background: #0f62fe;
+  color: #fff;
+}
+
+.btn-global {
+  background: #222;
+  color: #fff;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
   </style>
 
 </head>
@@ -46,10 +78,37 @@
       <p class="muted">If you’re working hard in customer support but still stuck with low pay, slow growth, and no clear direction — this blueprint is for you.</p>
 
 ```
-  <p class="price"><span class="strike">₹2,999</span> → <strong>₹299</strong> <span class="muted">(90% OFF)</span></p>
-  <a class="cta" href="https://aliqadir8.gumroad.com/l/eloqe">Buy the ebook for ₹299</a>
-  <p class="muted">Instant download • 30‑day money‑back guarantee</p>
+  <p class="price">
+  <span class="strike">₹2,999</span>
+  <strong>₹299 / $3.30</strong>
+  <span class="muted">(Limited-time launch price)</span>
+</p>
+
+<div class="cta-section">
+
+  <!-- India CTA -->
+  <a
+    class="cta india"
+    href="https://rzp.io/rzp/C9VNLfl"
+    target="_blank"
+  >
+    🇮🇳 Buy for ₹299 (India)
+  </a>
+
+  <!-- International CTA -->
+  <a
+    class="cta global"
+    href="https://aliqadir8.gumroad.com/l/eloqe"
+    target="_blank"
+  >
+    🌍 Buy for $3.30 (International)
+  </a>
+
 </div>
+
+<p class="muted">
+  Instant PDF download • Lifetime access
+</p>
 
 <div class="card">
   <h3>What you’ll walk away with</h3>
